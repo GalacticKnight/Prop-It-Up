@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import Person from './components/Person';
 
 function App() {
   return (
@@ -7,6 +7,31 @@ function App() {
       <h1> I am here</h1>
       
       
+      <Person
+        first={"Doe"}
+        last={"Jane"}
+        age={"45"}
+        haircolor={"black"}
+      />
+      <Person
+        first={"smith"}
+        last={"john"}
+        age={"88"}
+        haircolor={"brown"}
+      />
+      <Person
+        first={"Doe"}
+        last={"Jane"}
+        age={"45"}
+        haircolor={"black"}
+      />
+      <Person
+        first={"Doe"}
+        last={"Jane"}
+        age={"45"}
+        haircolor={"black"}
+      />
+
       
       
       
