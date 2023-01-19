@@ -1,12 +1,53 @@
 import './App.css';
 import Person from './components/Person';
 
+const peopleArr = [
+  {
+    firstName: "Joe",
+    lastName: "Smith",
+    age: 28,
+    hairColor: "blonde",
+  },
+  {
+    firstName: "Matilda",
+    lastName: "Jones",
+    age: 33,
+    hairColor: "brown",
+  },
+  {
+    firstName: "Jane",
+    lastName: "Johnson",
+    age: 34,
+    hairColor: "blonde",
+  },
+  {
+    firstName: "Hal",
+    lastName: "Moore",
+    age: 90,
+    hairColor: "grey",
+  },
+];
+
+
 function App() {
   return (
     <div className="App">
+      {peopleArr.map((personObj, index) => (
+        <Person
+          key={index}
+          firstName={personObj.firstName}
+          lastName={personObj.lastName}
+          age={personObj.age}
+          hairColor={personObj.hairColor}
+        />
+      ))}
+
+
+
+      
+      {/* 
+      //Prop It Up
       <h1> I am here</h1>
-      
-      
       <Person
         first={"Doe"}
         last={"Jane"}
@@ -30,12 +71,7 @@ function App() {
         last={"Jane"}
         age={"45"}
         haircolor={"black"}
-      />
-
-      
-      
-      
-      
+      /> */}
       
     </div>
   );
