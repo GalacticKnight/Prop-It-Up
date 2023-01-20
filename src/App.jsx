@@ -1,6 +1,8 @@
 import './App.css';
 import Person from './components/Person';
 
+{/*
+//Putting it all together
 const peopleArr = [
   {
     firstName: "Joe",
@@ -27,8 +29,10 @@ const peopleArr = [
     hairColor: "grey",
   },
 ];
+*/}
 
-
+{/* 
+//Putting it all together
 function App() {
   return (
     <div className="App">
@@ -41,41 +45,53 @@ function App() {
           hairColor={personObj.hairColor}
         />
       ))}
-
-
-
-      
-      {/* 
-      //Prop It Up
-      <h1> I am here</h1>
-      <Person
-        first={"Doe"}
-        last={"Jane"}
-        age={"45"}
-        haircolor={"black"}
-      />
-      <Person
-        first={"smith"}
-        last={"john"}
-        age={"88"}
-        haircolor={"brown"}
-      />
-      <Person
-        first={"Doe"}
-        last={"Jane"}
-        age={"45"}
-        haircolor={"black"}
-      />
-      <Person
-        first={"Doe"}
-        last={"Jane"}
-        age={"45"}
-        haircolor={"black"}
-      /> */}
-      
     </div>
   );
 }
+*/}
+
+      
+{/* 
+//Prop It Up
+  function App() {
+    return (
+      <div className="App">
+        <h1> I am here</h1>
+        <Person
+          first={"Doe"}
+          last={"Jane"}
+          age={"45"}
+          haircolor={"black"}
+        />
+        <Person
+          first={"smith"}
+          last={"john"}
+          age={"88"}
+          haircolor={"brown"}
+        />
+        <Person
+          first={"Doe"}
+          last={"Jane"}
+          age={"45"}
+          haircolor={"black"}
+        />
+        <Person
+          first={"Doe"}
+          last={"Jane"}
+          age={"45"}
+          haircolor={"black"}
+        /> 
+      </div>
+    );
+  }      
+*/}
+function App() {
+  return (
+    <div className="App">
+      <Person></Person>
+    </div>
+    );
+  }  
 
 export default App;
 
